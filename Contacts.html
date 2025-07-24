@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!--place own custom styles stylesheet after bootstrap's css-->
+        <link href="CSS/style.css" type="text/css" rel="stylesheet">
+        <script src="script.js"></script>
+
+    </head>
+
+    <body>
+        <main>
+                <!-- Navbar -->
+                <nav class="navbar navbar-expand-lg myNav">
+                    <section class="container-fluid"> <!-- Container section for full-width navbar -->
+                        <!-- Navbar brand (links to homepage) -->
+                        <a class="navbar-brand customlink" href="Index.html">Janelle Yeo Sihui</a>
+                
+                        <!-- Navbar toggler button (appears on small screens) -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                
+                        <!-- Navbar links section (this will collapse on small screens) -->
+                        <nav class="collapse navbar-collapse myNav" id="navbarNav">
+                            <ul class="navbar-nav ms-auto"> <!-- Align links to the right -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="About.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Work.html">Work</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Personal.html">Personal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Contacts.html">Contacts</a>
+                                </li>
+                            </ul>
+                        </nav> <!-- End of navbar links section -->
+                    </section> <!-- End of container section -->
+                </nav> <!-- End of navbar -->
+
+                <section class="box">
+                    <article class="container text-center descriptions">
+                        <h2>Get In Touch With Me!</h2>
+                        <p>Thank you for visiting my page! As a dedicated student eager to apply my skills and knowledge, I am actively seeking job opportunities and internships. If you're looking for a passionate individual who is eager to learn and contribute, I would love to hear from you.</p>
+                        <p>Please feel free to reach out through the following methods:</p>
+                    </article>
+
+                    <contacts class="container text-center contacts">
+                        <div class="row justify-content-center">
+                            <!-- LinkedIn -->
+                            <div class="col-auto text-center mb-3">
+                                <i class="bi bi-linkedin d-block mb-1"></i> <!-- LinkedIn Icon -->
+                                <p class="mb-0">LinkedIn</p> <!-- LinkedIn text -->
+                            </div> <!-- /col-auto -->
+                    
+                            <!-- Email -->
+                            <div class="col-auto text-center mb-3">
+                                <i class="bi bi-envelope-fill d-block mb-1"></i> <!-- Email Icon -->
+                                <p class="mb-0">janelleyeosihui33@gmail.com</p> <!-- Email text -->
+                            </div> <!-- /col-auto -->
+                    
+                            <!-- Phone -->
+                            <div class="col-auto text-center mb-3">
+                                <i class="bi bi-telephone-fill d-block mb-1"></i> <!-- Phone Icon -->
+                                <p class="mb-0">+65 9619 2641</p> <!-- Phone text -->
+                            </div> <!-- /col-auto -->
+                        </div> <!-- /row -->
+                    </contacts> <!-- /contacts -->
+                </section>
+                
+                <form class="container text-center form">
+                    <p>Alternatively, you can fill out the form below, and I will respond promptly. I appreciate your consideration and look forward to the possibility of working with you!</p>
+                
+                    <!-- Name Input -->
+                    <div class="mb-3 text-start">
+                        <label for="inputName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="inputName">
+                    </div> <!-- /Name Input -->
+                
+                    <!-- Email Input -->
+                    <div class="mb-3 text-start">
+                        <label for="inputEmail" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="inputEmail">
+                    </div> <!-- /Email Input -->
+                
+                    <!-- Message Input -->
+                    <div class="mb-3 text-start">
+                        <label for="inputMessage" class="form-label">Message</label>
+                        <textarea class="form-control" id="inputMessage" rows="5"></textarea>
+                    </div> <!-- /Message Input -->
+                
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary float-end button">Send</button>
+                </form> <!-- /form -->
+              
+                <footer class="text-center py-3">
+                    <img src="images/signature.png" alt="">
+                </footer>
+        </main>
+        
+    </body>
+
+</html>
